@@ -1,0 +1,10 @@
+#drop{
+    display:none;
+}
+
+input[type=checkbox]:checked~#drop {
+    display:block;
+  } 
+  body{
+      background:url("../../ajay/ajay/mineload/5s.html");
+  }

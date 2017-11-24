@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <fieldset id="full">
+        <legend class="legend">Profile</legend>
+        <div class="username">
+            <b>USER NAME:</b><br>
+            <input type="text" placeholder="FIRST NAME" id="firstName"><span id="fname"></span>
+            <input type="text" placeholder="LAST NAME" id="lastName"><span id="lname"></span>
+        </div><br>
+        <div class="email">
+            <b>EMAIL:</b><br>
+            <input id="email" type="text" placeholder="EMAIL" id="email">
+        </div><br>
+        <div class="phone">
+            <b>PHONE:</b><br>
+            <input type="text" placeholder="PHONE NUMBER" id="phone">
+        </div><br>
+        <div class="dob">
+            <b>D.O.B:</b><br>
+            <input type="date" name="select" id="dob" onchange="returnAge()">    Age:<span id="age"></span><br><br>
+        </div>
+        <div class="gender">
+            <b>GENDER:</b><br>
+            <input type="radio" name="select" id="male" id="male"><label for=male>Male </label>
+            <input type="radio" name="select" id="female" id="female"><label for=female>Female </label><br><br>
+        </div>
+        <div class="password">
+            <b>PASSWORD:</b><br>
+            <input type="password" id="password">
+        </div><br>
+        <div class="phone">
+            <b>RE_ENTER PASSWORD:</b><br>
+            <input type="password" id="reenterpassword">
+        </div><br>
+        <div class="skills">
+            <b>SKILLS:</b><br><br>
+            <input type="checkbox" id="c" name="c" value=""><b>c</b>
+            <input type="checkbox" id="c++" name="c++" value=""><b>c++</b>
+            <input type="checkbox" id="java" name="java" value=""><b>Java</b>
+            <input type="checkbox" id="phython" name="phython" value=""><b>Phython</b>
+            <input type="checkbox" id="html" name="html" value=""><b>Html</b>
+            <input type="checkbox" id="css" name="css" value=""><b>Css</b>
+            <input type="checkbox" id="bootstrap" name="bootstrap" value=""><b>Bootstrap</b>
+        </div>
+        <select id="drop">
+            <option >ajay</option>
+            <option >ajhhgh</option>
+            <option selected>avvg</option>
+            <option >agggg</option>
+        </select>
+        <center><input type="submit" value="Submit"  id="submit"></center>
+    </fieldset><br>
+    
+</body>
+
+</html>

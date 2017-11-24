@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#new-keep {
+    display: block;
+    margin: 10px auto;
+    width: 254px;
+    border: 2px solid #bdc3c7;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(189, 195, 199, 0.3);
+}
+
+*,
+*:focus,
+*:hover,
+*:active {
+    outline: none;
+}
+
+#new-keep input[type=text] {
+    border: 2px solid #bdc3c7;
+    width: 230px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#new-keep input[type=text]:hover,
+#new-keep input[type=text]:focus {
+    border: 2px solid #2980b9;
+}
+
+#new-keep input[type=button] {
+    background: #2980b9;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+#new-keep input[type=button]:hover,
+#new-keep input[type=button]:focus {
+    background: #16a085;
+}
+
+.color-pallette {
+    list-style: none;
+    margin: 10px auto;
+    padding: 0;
+    text-align: center;
+}
+
+.color-pallette li {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #efefef;
+    margin-left: 5px;
+    cursor: pointer;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.color-pallette li.active {
+    border: 2px solid #777;
+}
+
+.color-pallette li.red {
+    background: #e74c3c;
+}
+
+.color-pallette li.green {
+    background: #27ae60;
+}
+
+.color-pallette li.blue {
+    background: #2980b9;
+}
+
+.color-pallette li.greensea {
+    background: #16a085;
+}
+
+.color-pallette li.orange {
+    background: #f39c12;
+}
+
+.color-pallette li.yellow {
+    background: #f1c40f;
+}
+
+.color-pallette li.purple {
+    background: #8e44ad;
+}
+
+.color-pallette li.navyblue {
+    background: #34495e;
+}
+
+.color-pallette li.white {
+    background: #fff;
+}
+
+.color-pallette li.black {
+    background: #000;
+}
+
+.color-pallette li.grey {
+    background: #efefef;
+}

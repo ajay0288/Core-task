@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Keep Notes - msgtovp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function result(res) {
+            document.getElementById('background-result').innerHTML = res;
+            document.getElementById('back').value=res;
+        }
+        function result1(res) {
+            document.getElementById('foreground-result').innerHTML = res;
+            document.getElementById('fore').value=res;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <div id="new-keep">
+            <div><input type="text" id="title" placeholder="Keep Title" /></div>
+            <div>
+                <div>Background:<span id="background-result"></span></div>
+                <input type="hidden" value="#fff" id="back" />
+                <div>
+                    <ul id="bgpallette" class="color-pallette">
+                        <li class="white active" onclick="result('#fff')"></li>
+                        <li class="grey" onclick="result('#efefef')"></li>
+                        <li class="black" onclick="result('#000')"></li>
+                        <li class="red" onclick="result('#e74c3c')"></li>
+                        <li class="blue" onclick="result('#2980b9')"></li>
+                        <li class="green" onclick="result('#27ae60')"></li>
+                        <li class="purple" onclick="result('#8e44ad')"></li>
+                        <li class="navyblue" onclick="result('#34495e')"></li>
+                        <li class="greensea" onclick="result('#16a085')"></li>
+                        <li class="yellow" onclick="result('#f1c40f')"></li>
+                        <li class="orange" onclick="result('#f39c12')"></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>Foreground: <span id="foreground-result"></span></div>
+                <input type="hidden" value="#000" id="fore" />
+                <div>
+                    <ul id="fgpallette" class="color-pallette">
+                        <li class="white" onclick="result1('#fff')"></li>
+                        <li class="grey" onclick="result1('#efefef')"></li>
+                        <li class="black active" onclick="result1('#000')"></li>
+                        <li class="red" onclick="result1('#e74c3c')"></li>
+                        <li class="blue" onclick="result1('#2980b9')"></li>
+                        <li class="green" onclick="result1('#27ae60')"></li>
+                        <li class="purple" onclick="result1('#8e44ad')"></li>
+                        <li class="navyblue" onclick="result1('#34495e')"></li>
+                        <li class="greensea" onclick="result1('#16a085')"></li>
+                        <li class="yellow" onclick="result1('#f1c40f')"></li>
+                        <li class="orange" onclick="result1('#f39c12')"></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="Create" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

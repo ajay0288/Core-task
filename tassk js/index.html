@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <script type="text/javascript">
+        function task() {
+            template =
+                "<div class='profile-holder'>\
+            <div class='profile-content'>\
+            <div class='dp-holder'>\
+            <img src='{{image}} alt='{{firstName}} {{lastName}}' />\
+            </div>\
+            <div class='name-holder'>\
+            <h3>{{firstName}} {{lastName}}</h3>\
+            <h5>@{{company}}</h5>\
+            </div>\
+            <div class='social-links'>\
+            <a href='tel:{{mobileNumber}}'>{{mobileNumber}}</a>\
+            <a href='mailto:{{emailId}}'>{{emailId}}</a>\
+            </div>\
+            </div>\
+           </div>"
+
+            user = [{
+                    image: '1.jpg',
+                    firstName: "ARUN",
+                    lastName: "Udhayakumar",
+                    mobileNumber: "5285022202",
+                    email: "gginhiu03@gmail.com"
+                },
+                {
+                    image: '2.jpg',
+                    firstName: "babu",
+                    lastName: "Aswin",
+                    mobileNumber: "9857878787",
+                    email: "jdffffal@gmail.com"
+                },
+                {
+                    image: '3.jpg',
+                    firstName: "arun",
+                    lastName: "thran",
+                    mobileNumber: "951843625484",
+                    email: "drfdfn@gmail.com"
+                },
+                {
+                    image: '4.jpg',
+                    firstName: "aswin",
+                    lastName: "Gabriel",
+                    mobileNumber: "87954859645",
+                    email: "daid@gmail.com"
+                },
+                {
+                    image: '5.jpg',
+                    firstName: "dany",
+                    lastName: "Kumar",
+                    mobileNumber: "9565658485",
+                    email: "ajay@gmail.com"
+                }
+
+            ]
+            arr = [];
+            for (i in user) {
+                arr.push(template.replace(/{{firstName}}/g, user[i]['firstName'])
+                    .replace(/{{lastName}}/g, user[i]['lastName'])
+                    .replace(/{{mobileNumber}}/g, user[i]['mobileNumber'])
+                    .replace(/{{emailId}}/g, user[i]['email'])
+                    .replace(/{{image}}/g, user[i]['image'])
+                );
+            }
+
+            document.getElementById('task').innerHTML = arr.join("");
+        }
+    </script>
+</head>
+
+<body onload='task()'>
+    <div id="task"></div>
+</body>
+
+</html>
